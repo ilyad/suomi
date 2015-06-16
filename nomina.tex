@@ -1,0 +1,559 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[a4paper, top=0.5in, bottom=0.5in, left=0.21in, right=0.21in]{geometry}
+%\usepackage[a4paper, landscape, top=1in, bottom=1in, left=0in, right=0in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{color}
+\usepackage{textcomp}
+\usepackage{bold-extra}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\rfoot{{\tiny [2015-06-15]}~~\bf\thepage}
+\lfoot{\copyright~~2015~~\sc Ilya Dogolazky}
+\renewcommand{\headrulewidth}{0pt}
+
+\def\weak#1{{\color{blue}#1}}
+\def\strong#1{{\color{red}#1}}
+
+\let\TT=\tt
+\let\N=\textnumero
+\def\NN{\N\N}
+
+\def\kk;{\strong{kk}}
+\def\pp;{\strong{pp}}
+\def\tt;{\strong{tt}}
+\def\nt;{\strong{nt}}
+\def\nk;{\strong{nk}}
+\def\K;{\strong{k}}
+\def\P;{\strong{p}}
+\def\T;{\strong{t}}
+\def\lt;{\strong{lt}}
+\def\rt;{\strong{rt}}
+\def\mp;{\strong{mp}}
+\def\lki;{\strong{lki}}
+\def\lk;{\strong{lk}}
+\def\rki;{\strong{rki}}
+
+\def\k;{\weak{k}}
+\def\p;{\weak{p}}
+\def\t;{\weak{t}}
+\def\nn;{\weak{nn}}
+\def\ng;{\weak{ng}}
+\def\0{\weak{\hbox to 0pt{\hskip0pt minus 1fill \vbox to 0pt{\vskip1pt\hrule width1ex height 0pt depth 0.5pt\vskip0pt minus1fill}\hskip0pt minus 1fill}}}
+\def\v;{\weak{v}}
+\def\d;{\weak{d}}
+\def\ll;{\weak{ll}}
+\def\rr;{\weak{rr}}
+\def\mm;{\weak{mm}}
+\def\lj;{\weak{lj}}
+\def\rje;{\weak{rje}}
+
+\def\zeroh#1#2{\hbox{\vbox to 0pt{\vskip #2\hbox{#1}\hrule height 0pt\vfill}}}
+\def\den{\hbox to 0pt {\hskip-1.5ex\zeroh{-tten}{-4ex}\hskip 0pt minus 1 fill}den}
+%{\hbox to 0pt{tten\vskip 0pt minus 1 fill}}
+
+\def\[#1]{{\small\scshape\bfseries #1}}
+\def\/#1/{{\footnotesize /#1}}
+
+\def\sana #1 #2 -> #3 // {\category{#1}\yksikko #2 \monikko #3 \hline}
+\def\category#1{\hskip0pt \hbox to 0pt {\hskip-3mm{\hbox to 0pt{\hskip 0pt minus 1 fill \small #1}}\hfill}}
+%\def\yksikko #1 #2 #3 #4 #5 #6 #7 {#1-#2-#3-#4-#5-#6 #7$\longrightarrow$}
+%\def\monikko #1 #2 #3 #4 #5 #6 {#1 #2-#3-#4-#5-#6\par}
+
+\def\yksikko #1 #2 #3 #4 #5 #6 #7 {{\bf #1} & #2 & #3 & #4 & #5 & #6 \\ {\TT #7}$\,\longrightarrow\,$}
+\def\monikko #1 #2 #3 #4 #5 #6 {{\TT #1} &  #2 & #3 & #4 & #5 & #6 \\ }
+\def\tabformat{|l l|l|l|l|l|}
+\def\cases{& {\small\sc vartalo} & {\small\sc partitiivi} & {\small\sc genetiivi} & {\small\sc inessiivi} & {\small\sc illatiivi} \\ \hline}
+\def\title #1 #2 #3 //{\multicolumn{2}{|l|}{{\color{magenta}\TT #1}}&\multicolumn{4}{l|}{{\small\it#3}\hfill #2} \\ \hline\hline}
+
+%\def\yksikko #1 #2 #3 #4 #5 #6 #7 {#1 & #2 & #3 & #4 & #5 & #6 #7$\,\longrightarrow\,$}
+%\def\monikko #1 #2 #3 #4 #5 #6 {#1 &  #2 & #3 & #4 & #5 & #6 \\ \hline}
+%\def\tabformat{|l|l|l|l|l|l|l|l|l|l|l|l|}
+
+\begin{document}
+
+\begin{center}
+\begin{tabular}{\tabformat}
+
+\hline\cases\hline
+
+\title UUSI~I {\NN~5, 6}             ~ //
+\sana 5 risti risti- ristia ristin ristissä ristiin i -> ei  rist\[ei-] ristejä ristien risteissä ristei\[hin] //
+\sana 5 ko\T;i  ko\d;i-  ko\T;ia  ko\d;in  ko\d;issa  ko\T;iin  i -> ei  ko\d;\[ei-]  ko\T;eja  ko\T;ien  ko\d;eissa  ko\T;ei\[hin] //
+\sana 5 äi\T;i  äi\d;i-  äi\T;iä  äi\d;in  äi\d;issä  äi\T;iin  i -> ei  äi\d;\[ei-]  äi\T;ejä  äi\T;ien  äi\d;eissä  äi\T;ei\[hin] //
+\sana 5 lo\kk;i  lo\k;i-  lo\kk;ia  lo\k;in  lo\k;issa  lo\kk;iin  i -> ei  lo\k;\[ei-]  lo\kk;eja  lo\kk;ien  lo\k;eissa  lo\kk;ei\[hin] //
+\sana 6 huijari huijari- huijaria huijarin huijarissa huijariin i -> ei huijar\[ei-] huijareja huijarien huijareissa huijarei\[hin] //
+
+\hline\hline
+
+\title VANHA~I {\N~7}             ~ //
+\sana 7 ovi ov\[e-] ovea oven ovessa oveen e -> i ov\[i-] ovia ovien ovissa oviin //
+\sana 7 kivi kiv\[e-] kiveä kiven kivessä kiveen e -> i kiv\[i-] kiviä kivien kivissä kiviin //
+\sana 7 lah\T;i lah\d;\[e-] lah\T;ea lah\d;en lah\d;essa lah\T;een  e -> i lah\d;\[i-] lah\T;ia lah\T;ien lah\d;issa lah\T;iin //
+\sana 7 mä\K;i mä\0\[e-] mä\K;eä mä\0en mä\0essä mä\K;een  e -> i mä\0\[i-] mä\K;iä mä\K;ien mä\0issä mä\K;iin //
+\sana 7 veli vel\[je-] veljeä veljen veljessä veljeen e -> i velj\[i]- veljiä veljien veljissä veljiin //
+
+\hline\hline
+
+\title VANHA~MI-NI-RI-LI-LOHI {\NN~23, 24, 25, 26} ~ //
+\sana 23 tiili tiil\[e-] tiil\[t]ä  tiilen tiilessä tiileen e -> i till\[i-] liiliä tiilien tiilissä tiiliin //
+\sana 23 lohi loh\[e-] loh\[t]a lohen lohessa loheen e -> i loh\[i-] lohia lohien lohissa lohiin //
+\sana 24 uni un\[e-] un\[t]a unen unessa uneen e -> i un\[i-] unia unten/unien unissa uniin //
+\sana 25 toimi toim\[e-] toi\[nt]a\/-mea/ toimen toimessa toimeen e -> i toim\[i-] toimia toimien\/-\[nt]en/ toimissa toimiin //
+\sana 25 lumi  lum\[e-]  lu\[nt]a\/-mea/  tumen  lumessa  lumeen  e -> i lum\[i-] lumia lumien\/\[nt]en/ lumissa lumiin //
+\sana 26 saari saar\[e-] saar\[t]a saaren saaressa saareen e -> i saar\[i-] saaria saarten\/-rien/ saarissa saariin //
+\sana 26 pieni pien\[e-] pien\[t]ä pienen pienessä pieneen e -> i pien\[i-] pieniä pienten\/-nien/ pienissä pieniin //
+\sana 26 kieli kiel\[e-] kiel\[t]ä kielen kielessä kieleen e -> i kiel\[i-] kieliä kielten\/-lien/ kielissä kieliin //
+
+\hline\hline
+
+\title VANHA~SI {\NN~27, 28, 31} ~ //
+\sana 27 vesi ve\[\d;e-] ve\T;\[t]ä ve\d;en ve\d;essä ve\T;een e -> i ve\[si-] vesiä vesien\/-\T;ten/ vesissä vesiin //
+\sana 27 uusi uu\[\d;e-] uu\T;\[t]a uu\d;en uu\d;essa uu\T;een e -> i uu\[si-] uusia uusien\/-\T;ten/ uusissa uusiin //
+\sana 31 yksi y\[h\d;e-] yh\T;ä yh\d;en yh\d;essä yh\T;een e -> i y\[ksi-] yksiä yksien yksissä yksiin //
+\sana 31 kaksi ka\[h\d;e-] kah\T;a kah\d;en kah\d;essa kah\T;een e -> i ka\[ksi-] kaksia kaksien kaksissa kaksiin //
+\sana 28 kynsi ky\[\nn;e-] ky\nt;\[t]ä ky\nn;en ky\nn;essä ky\nt;een e -> i kyn\[si-] kynsiä kynsien\/-\nt;ten/ kynissä kynsiin //
+\sana 28 länsi lä\[\nn;e-] lä\nt;\[t]ä lä\nn;en lä\nn;essä lä\nt;een ~ -> ~ --- --- --- --- --- //
+
+\hline\hline
+
+\title VANHA~PSI-KSI-TSI {\NN~29, 30} ~ //
+\sana 29 lapsi laps\[e-] la\[st]a lapsen lapsessa lapseen e -> i laps\[i-] lapsia lapsien\/-sten/ lapsissa lapsiin //
+\sana 29 vuoksi vuoks\[e-] vuo\[st]a vuoksen vuoksessa vuokseen e -> i vuoks\[i-] vuoksia vuoksien\/-sten/ vuoksissa vuoksiin //
+\sana 30 veitsi veits\[e-] vei\[st]ä veitsen veitsessä veitseen e -> i veits\[i-] veitsiä veitsien\/-sten/ veitsissä veitsiin //
+
+\hline\hline\cases
+
+\end{tabular}
+\end{center}
+
+\vfill\eject
+
+\begin{center}
+\begin{tabular}{\tabformat}
+
+\hline \cases \hline
+
+\title O-Ö-U-Y {\NN~1, 2, 4} ~ //
+\sana 1 aa\lt;o aa\ll;o- aa\lt;oa aa\ll;on aa\ll;ossa aa\lt;oon o -> oi aa\ll;o\[i-] aa\lt;oja aa\lt;ojen aa\ll;oissa aa\lt;oi\[hin] //
+\sana 1 hui\pp;u hui\p;u- hui\pp;ua hui\p;un hui\p;ussa hui\pp;uun u -> ui hui\p;u\[i-] hui\pp;uja hui\pp;ujen hui\p;uissa hui\pp;ui\[hin] //
+\sana 1 u\kk;o u\k;o- u\kk;oa u\k;on u\k;ossa u\kk;oon o -> oi u\k;o\[i-] u\kk;oja u\kk;ojen u\k;oissa u\kk;oi\[hin] //
+\sana 1 mä\nt;y mä\nn;y- mä\nt;yä mä\nn;yn mä\nn;yssä mä\nt;yyn y -> yi mä\nn;y\[i-] mä\nt;yjä mä\nt;yjen mä\nn;yissä mä\nt;yi\[hin] //
+\sana 2 hillistö hillistö- hillistöa hillistön hillistössa hillistöön ö -> öi hillistö\[i-] hillistöja\/-öita/ hillistöjen\/-öi\den/ hillistöissa hillistöi\[hin] //
+\sana 2 epäily epäily- epäilyä epäilyn epäilyssä epäilyyn y -> yi epäily\[i-] epäilyjä\/-yitä/ epäilyjen\/-yi\den/ epäilyissä epäilyi\[hin] //
+\sana 4 era\kk;o era\k;o- era\kk;oa era\k;on era\k;ossa era\kk;oon o -> oi era\k;o\[i-] era\kk;oja\/-\k;oita/ era\kk;ojen\/-\k;oi\den/ era\k;oissa era\kk;oi\[hin] //
+\sana 4 äly\kk;ö äly\k;ö- äly\kk;öä äly\k;ön äly\k;össä äly\kk;öön ö -> öi äly\k;ö\[i-] äly\kk;öjä\/-\k;öitä/ äly\kk;öjen\/-\k;öi\den/ äly\k;öissä äly\kk;öi\[hin] //
+
+\hline\hline
+
+\title A-Ä {\NN~10, 11} ~ //
+\sana 10 koira koira- koiraa koiran koirassa koiraan a -> i koir\[i-] koiria koirien\/-ain/ koirissa koiriin //
+\sana 10 ho\nk;a ho\ng;a- ho\nk;aa ho\ng;an ho\ng;assa ho\nk;aan a -> i ho\ng;\[i-] ho\nk;ia ho\nk;ien\/-ain/ ho\ng;issa ho\nk;iin //
+\sana 10 här\K;ä här\0ä- här\K;ää här\0än här\0ässä här\K;ään ä -> i här\0\[i-] här\K;iä här\K;ien\/-äin/ här\0issä här\K;iin //
+\sana 11 omena omena- omenaa omenan omenassa omenaan a -> i omen\[i-] omenia omenien\/-ain/ omenissa omeniin //
+\sana 11 pihlaja pihlaja- pihlajaa pihlajan pihlajassa pihlajaan a -> i pihlaj\[i-] pihlajia pihlajien\/-ain/ pihlajissa pihlajiin //
+
+\hline\hline
+
+\title A+A=OI {\NN~9, 11, 13} ~ //
+\sana 9 kala kala- kalaa kalan kalassa kalaan a -> oi kal\[oi-] kaloja kalojen\/-ain/ kaloissa kaloi\[hin] //
+\sana 9 ha\K;a ha\0a- ha\K;aa ha\0an ha\0assa ha\K;aan a -> oi ha\K;\[oi-] ha\K;oja ha\K;ojen\/-ain/ ha\0oissa ha\K;oi\[hin] //
+\sana 9 marja marja- marjaa marjan marjassa marjaan a -> oi marj\[oi-] marjoja marjojen\/-ain/ marjoissa marjoi\[hin] //
+\sana 9 kissa kissa- kissaa kissan kissassa kissaan a -> oi kiss\[oi-] kissoja kissojen\/-ain/ kissoissa kissoi\[hin] //
+\sana 9 tiira tiira- tiiraa tiiran tiirassa tiiraan a -> oi tiir\[oi-] tiiroja tiirojen\/-ain/ tiiroissa tiiroi\[hin] //
+\sana 9 määi\nt;ä määi\nn;- määi\nt;ää määi\nn;än määi\nn;ässä määi\nt;ään ä -> öi määi\nn;\[öi-] määi\nt;öjä määi\nt;öjen\/-äin/ määi\nn;öissä määi\nt;öi\[hin] //
+\sana 13 kapusta kapusta- kapustaa kapustan kapustassa kapustaan a -> oi kapust\[oi-] kapustoita\/-oja/ kapustojen\/-oi\den/ kapustoissa kapustoi\[hin] //
+\sana 11 omena omena- omenaa omenan omenassa omenaan a -> i omen\[oi-] omenoita\/-oja/ omenoiden\/-ojen/ omenoissa omenoi\[hin] //
+\sana 11 pihlaja pihlaja- pihlajaa pihlajan pihlajassa pihlajaan a -> i pihlaj\[oi-] pihlajoita\/-oja/ pihlajoiden\/-ojen/ pihlajoissa pihlajoi\[hin] //
+
+\hline\hline
+
+\title LA-NA-RA-IA-KKA-IJA {\NN~12, 14} ~ //
+\sana 12 ruokala ruokala- ruokalaa ruokalan ruokalassa ruokalaan a -> oi ruokal\[oi-] ruokaloita ruokaloiden\/-ain/ ruokaloissa ruokaloi\[hin] //
+\sana 12 lakana lakana- lakanaa lakanan lakanassa lakanaan a -> oi lakan\[oi-] lakanoita lakanoiden\/-ain/ lakanoissa lakanoi\[hin] //
+\sana 12 makkara makkara- makkaraa makkaran makkarassa makkaraan a -> oi makkar\[oi-] makkaroita makkaroiden\/-ain/ makkaroissa makkaroi\[hin] //
+\sana 12 aronia aronia- aroniaa aronian aroniassa aroniaan a -> oi aroni\[oi-] aronioita aronioiden\/-ain/ aronioissa aronioi\[hin] //
+\sana 12 tekijä tekijä- tekijää tekijän tekijässä tekijään ä -> öi tekij\[öi-] tekijöitä tekijöiden\/-äin/ tekijöissä tekijöi\[hin] //
+\sana 14 tora\kk;a tora\k;a- tora\kk;aa tora\k;an tora\k;assa tora\kk;aan a -> oi tora\k;\[oi-] tora\kk;oja\/-\k;oita/ tora\kk;ojen\/-\k;oi\den/ tora\k;oissa tora\kk;oi\[hin] //
+
+\hline\hline\cases
+
+\end{tabular}
+\end{center}
+
+\vfill\eject
+
+\begin{center}
+\begin{tabular}{\tabformat}
+
+\hline\cases\hline
+
+\title E$^*$ {\N~48} ~ //
+\sana 48 huone huone\[e-] huone\[tta] huoneen huoneessa huonee\[seen] e -> i huone\[i-] huoneita huoneiden\/-tten/ huoneissa huonei\[siin]\/-\[hin]/ //
+\sana 48 aste aste\[e-] aste\[tta] asteen asteessa astee\[seen] e -> i aste\[i-] asteita asteiden\/-tten/ asteissa astei\[siin]\/-\[hin]/ //
+\sana 48 ohje ohje\[e-] ohje\[tta] ohjeen ohjeessa ohjee\[seen] e -> i ohje\[i-] ohjeita ohjeiden\/-tten/ ohjeissa ohjei\[siin]\/-\[hin]/ //
+\sana 48 jä\t;e jä\tt;e\[e-] jä\t;e\[ttä] jä\tt;een jä\tt;eessä jä\tt;ee\[seen] e -> i jä\tt;e\[i-] jä\tt;eitä jä\tt;eiden\/-tten/ jä\tt;eissä jä\tt;ei\[siin]\/-\[hin]/ //
+\sana 48 ko\0e ko\K;e\[e-] ko\0e\[tta] ko\K;een ko\K;eessa ko\K;ee\[seen] e -> i ko\K;e\[i-] ko\K;eita ko\K;eiden\/-tten/ ko\K;eissa ko\K;ei\[siin]\/-\[hin]/ //
+\sana 48 sa\d;e sa\T;e\[e-] sa\d;e\[tta] sa\T;een sa\T;eessa sa\T;ee\[seen] e -> i sa\T;e\[i-] sa\T;eita sa\T;eiden\/-tten/ sa\T;eissa sa\T;ei\[siin]\/-\[hin]/ //
+\sana 48 tor\k;e tor\kk;e\[e-] tor\k;e\[tta] tor\kk;een tor\kk;eessa tor\kk;ee\[seen] e -> i tor\kk;e\[i-] tor\kk;eita tor\kk;eiden\/-tten/ tor\kk;eissa tor\kk;ei\[siin]\/-\[hin]/ //
+\sana 48 su\lj;e su\lk;e\[e-] su\lj;e\[tta] su\lk;een su\lk;eessa su\lk;ee\[seen] e -> i su\lk;e\[i-] su\lk;eita su\lk;eiden\/-tten/ su\lk;eissa su\lk;ei\[siin]\/-\[hin]/ //
+
+\hline\hline
+
+\title PELLE-NALLE {\N~8} ~ //
+\sana 8 pelle pelle- pelleä pellen pellessä pelleen e -> ei pelle\[i-] pellejä pellejen\/-ein/ pelleissä pellei\[hin] //
+\sana 8 ope ope- opea open opessa opeen e -> ei ope\[i-] opeja opejen\/-ein/ opeissa opei\[hin] //
+\sana 8 nu\kk;e nu\k;e- nu\kk;ea nu\k;en nu\k;essa nu\kk;een e -> ei nu\k;e\[i-] nu\kk;eja nu\kk;ejen\/-ein/ nu\k;eissa nu\kk;ei\[hin] //
+
+\hline\hline
+
+\title MAA-SUO-JÄÄ {\NN~18, 19} ~ //
+\sana 18 maa maa- maata maan maassa maa\[han] aa -> ai m\[ai-] maita maiden\/-tten/ maissa mai\[hin] //
+\sana 18 puu puu- puuta puun puussa puu\[hun] uu -> ui p\[ui-] puita puiden\/-tten/ puissa pui\[hin] //
+\sana 18 jää jää- jäätä jään jäässä jää\[hän] ää -> äi j\[äi-] jäitä jäiden\/-tten/ jäissä jäi\[hin] //
+\sana 19 suo suo- suota suon suossa suo\[hon] uo -> oi s\[oi-] soita soiden\/-tten/ soissa soi\[hin] //
+\sana 19  yö  yö-  yötä  yön  yössä  yö\[hön] yö -> öi  \[öi-]  öitä  öiden\/-tten/  öissä  öi\[hin] //
+
+\hline\hline
+
+\title AA-UU-EE {\NN~17, 20} ~ //
+\sana 17 vakaa vakaa- vakaata vakaan vakaassa vakaa\[seen] aa -> ai vak\[ai-] vakaita vakaiden\/-tten/ vakaissa vakai\[siin]\/\[-hin]/ //
+\sana 17 paluu paluu- paluuta paluun paluussa paluu\[seen] uu -> ui pal\[ui-] paluita paluiden\/-tten/ paluissa palui\[siin]\/\[-hin]/ //
+\sana 20 raguu raguu- raguuta raguun raguussa raguu\[hun]\/\[-seen]/ uu -> ui rag\[ui-] raguita raguiden\/-tten/ raguissa ragui\[hin]\/\[-siin]/ //
+\sana 20 pyree pyree- pyreetä pyreen pyreessä pyree\[hen]\/\[-seen]/ ee -> ei pyr\[ei-] pyreitä pyreiden\/-tten/ pyreissä pyrei\[hin]\/\[-siin]/ //
+
+\hline\hline
+
+\title AO-EO-IO-IÖ-IE-OE {\N~3} ~ //
+\sana 3 lukio lukio- lukiota lukion lukiossa lukioon io -> ioi lukio\[i-] lukioita lukioiden\/-tten/ lukioissa lukioi\[hin] //
+\sana 3 keittiö keittiö- keittiötä keittiön keittiössä keittiöön iö -> iöi keittiö\[i-] keittiöitä keittiöiden\/-tten/ keittiöissä keittiöi\[hin] //
+\sana 3 museo museo- museota museon museossa museoon eo -> eoi museo\[i-] museoita museoiden\/-tten/ museoissa museoi\[hin] //
+\sana 3 alloe alloe- alloeta alloen alloessa alloeen oe -> oei alloe\[i-] alloeita alloeiden\/-tten/ alloeissa alloei\[hin] //
+
+\hline\hline
+
+\title OA-EA-EÄ {\N~15} ~ //
+\sana 15 ainoa ainoa- ainoaa\/-ata/ ainoan ainoassa ainoaan oa -> oi aino\[i-] ainoita ainoiden\/-oain/ ainoissa ainoi\[siin]\/\[-hin]/ //
+\sana 15 korkea korkea- korkeaa\/-ata/ korkean korkeassa korkeaan ea -> ei korke\[i-] korkeita korkeiden\/-eain/ korkeissa korkei\[siin]\/\[-hin]/ //
+\sana 15 pimeä pimeä- pimeää\/-ätä/ pimeän pimeässä pimeään eä -> ei pime\[i-] pimeitä pimeiden\/-eäin/ pimeissä pimei\[siin]\/\[-hin]/ //
+
+\hline \hline % \cases no room :-(
+
+\end{tabular}
+\end{center}
+
+\vfill\eject
+
+\begin{center}
+\begin{tabular}{\tabformat}
+
+\hline\cases\hline
+
+\title NEN {\N~38} ~ //
+\sana 38 nainen nai\[se-] nai\[sta] naisen naisessa naiseen e -> i nais\[i-] naisia nais\[ten]\/-ien/ naisissa naisiin //
+\sana 38 hyinen hyi\[se-] hyi\[stä] hyisen hyisessä hyiseen e -> i hyis\[i-] hyisiä hyis\[ten]\/-ien/ hyisissä hyisiin //
+\sana 38 hevonen hevo\[se-] hevo\[sta] hevosen hevosessa hevoseen e -> i hevos\[i-] hevosia hevos\[ten]\/-ien/ hevosissa hevosiin //
+
+\hline\hline
+
+\title IN {\N~33} ~ //
+\sana 33 mittain mittai\[me-] mittainta mittaimen mittaimessa mittaimeen e -> i mittaim\[i-] mittaimia mittaimien\/-ainten/ mittaimissa mittaimiin //
+\sana 33 eläin eläi\[me-] eläintä eläimen eläimessä eläimeen e -> i eläim\[i-] eläimiä eläimien\/-äinten/ eläimissä eläimiin //
+\sana 33 suo\d;in suo\T;i\[me-] suo\d;inta suo\T;imen suo\T;imessa suo\T;imeen e -> i suo\T;im\[i-] suo\T;imia suo\T;imien\/-\d;inten/ suo\T;imissa suo\T;imiin //
+\sana 33 su\lj;in su\lk;i\[me-] su\lj;inta su\lk;imen su\lk;imessa su\lk;imeen e -> i su\lk;im\[i-] su\lk;imia su\lk;imien\/-\lj;inten/ su\lk;imissa su\lk;imiin //
+
+\hline\hline
+
+\title TON-TÖN {\N~34} ~ //
+\sana 34 ilma\t;on ilma\tt;o\[ma-] ilma\t;onta ilma\tt;oman ilma\tt;omassa ilma\tt;omaan a -> i ilma\tt;om\[i-] ilma\tt;omia ilma\tt;omien\/-\t;onten/ ilma\tt;omissa ilma\tt;omiin //
+\sana 34 kive\t;ön kive\tt;ö\[mä-] kive\t;öntä kive\tt;ömän kive\tt;ömässä kive\tt;ömään ä -> i kive\tt;öm\[i-] kive\tt;ömiä kive\tt;ömien\/-\t;önten/ kive\tt;ömissä kive\tt;ömiin //
+
+\hline\hline
+
+\title EN-EL-ER-AR-ÄR {\N~32} ~ //
+\sana 32 ahven ahven\[e-] ahventa ahvenen ahvenessa ahveneen e -> i ahven\[i-] ahvenia ahvenien\/-ten/ ahvenissa ahveniin //
+\sana 32 kymmenen kymmen\[e-] kymmentä kymmen kymmenessä kymmeneen e -> i kymmen\[i-] kymmeniä kymmenien\/-ten/ kymmenissä kymmeniin //
+\sana 32 sävel sävel\[e-] säveltä sävelen sävelessä säveleen e -> i sävel\[i-] säveliä sävelien\/-ten/ sävelissä säveliin //
+\sana 32 ta\t;ar ta\tt;ar\[e-] ta\t;arta ta\tt;aren ta\tt;aressa ta\tt;areen e -> i ta\tt;ar\[i-] ta\tt;aria ta\tt;arien\/-\t;arten/ ta\tt;arissa ta\tt;ariin //
+\sana 32 myyjä\t;är myyjä\tt;är\[e-] myyjä\t;ärtä myyjä\tt;ären myyjä\tt;äressä myyjä\tt;äreen e -> i myyjä\tt;är\[i-] myyjä\tt;äriä myyjä\tt;ärien\/-\t;ärten/ myyjä\tt;ärissä myyjä\tt;äriin //
+
+\hline\hline
+
+\title US-YS-OS-ÖS-ANANAS {\N~39} ~ //
+\sana 39 ananas anana\[kse-] ananasta ananaksen ananaksessa ananakseen e -> i ananaks\[i-] ananaksia anana\[sten]\/-ksien/ ananaksissa ananaksiin //
+\sana 39 elämys elämy\[kse-] elämystä elämyksen elämyksessä elämykseen e -> i elämyks\[i-] elämyksiä elämy\[sten]\/-ksien/ elämyksissä elämyksiin //
+\sana 39 hinaus hinau\[kse-] hinausta hinauksen hinauksessa hinaukseen e -> i hinauks\[i-] hinauksia hinau\[sten]\/-ksien/ hinauksissa hinauksiin //
+\sana 39 hiillos hiillo\[kse-] hiillosta hiilloksen hiilloksessa hiillokseen e -> i hiilloks\[i-] hiilloksia hiillo\[sten]\/-ksien/ hiilloksissa hiilloksiin //
+
+\hline\hline
+
+\title YYS-UUS-YS-ABSTRAKTUS {\N~40} ~ //
+\sana 40 sairaus sairau\[\d;e-] sairau\[\T;]ta sairau\d;en sairau\d;essa sairau\T;een de -> ksi sairau\[ksi-] sairauksia sairauksien sairauksissa sairauksiin //
+\sana 40 halpuus halpuu\[\d;e-] halpuu\[\T;]ta halpuu\d;en halpuu\d;essa halpuu\T;een de -> ksi halpuu\[ksi-] halpuuksia halpuuksien halpuuksissa halpuuksiin //
+\sana 40 hyvyys hyvyy\[\d;e-] hyvyy\[\T;]tä hyvyy\d;en hyvyy\d;essä hyvyy\T;een de -> ksi hyvyy\[ksi-] hyvyyksiä hyvyyksien hyvyyksissä hyvyyksiin //
+
+\hline\hline
+
+\title IS-ES-AS-ÄS-ÄT-UT {\NN~41, 44} ~ //
+\sana 41 kallis kalli\[i-] kallista kalliin kalliissa kallii\[seen] ii -> ii kallii- kalliita kalliiden\/-tten/ kalliissa kalli\[siin] //
+\sana 41 re\ng;as re\nk;\[aa-] re\ng;asta re\nk;aan re\nk;aassa re\nk;aa\[seen] aa -> ai re\nk;a\[i-] re\nk;aita re\nk;aiden\/-tten/ re\nk;aissa re\nk;ai\[siin]\/\[-hin]/ //
+\sana 41 ha\mm;as ha\mp;\[aa-] ha\mm;asta ha\mp;aan ha\mp;aassa ha\mp;aa\[seen] aa -> ai ha\mp;a\[i-] ha\mp;aita ha\mp;aiden\/-tten/ ha\mp;aissa ha\mp;ai\[siin]\/\[-hin]/ //
+\sana 41 ra\k;as ra\kk;\[aa-] ra\k;asta ra\kk;aan ra\kk;aassa ra\kk;aa\[seen] aa -> ai ra\kk;a\[i-] ra\kk;aita ra\kk;aiden\/-tten/ ra\kk;aissa ra\kk;ai\[siin]\/\[-hin]/ //
+\sana 44 kevät kev\[ää-] kevättä kevään keväässä kevää\[seen] ää -> äi kevä\[i-] keväitä keväiden\/-tten/ keväissä keväi\[siin]\/\[-hin]/ //
+
+\hline\cases
+
+\end{tabular}
+\end{center}
+
+\vfill\eject
+
+\begin{center}
+\begin{tabular}{\tabformat}
+
+\hline \cases \hline
+
+\title MPI~\&~IN {\NN~16, 36} comparative and superlative adjectives //
+\sana 16 piene\mp;i piene\mm;\[ä-] piene\mp;\[ää] piene\mm;än piene\mm;ässä piene\mp;ään ä -> i piene\mm;\[i-] piene\mp;iä piene\mp;ien\/-\mp;äin/ piene\mm;issä piene\mp;iin //
+\sana 36 pienin   pieni\[\mm;ä-] pienintä     pieni\mm;än pieni\mm;ässä pieni\mp;ään ä -> i pieni\mm;\[i-] pieni\mp;iä pieni\mp;ien\/-nten/  pieni\mm;issä pieni\mp;iin //
+\sana 16 uude\mp;i uude\mm;\[a-] uude\mp;\[aa] uude\mm;an uude\mm;assa uude\mp;aan a -> i uude\mm;\[i-] uude\mp;ia uude\mp;ien\/-\mp;ain/ uude\mm;issa uude\mp;iin //
+\sana 36 uusin   uusi\[\mm;a-] uusinta     uusi\mm;an uusi\mm;assa uusi\mp;aan a -> i uusi\mm;\[i-] uusi\mp;ia uusi\mp;ien\/-nten/  uusi\mm;issa uusi\mp;iin //
+\sana 16 iso\mp;i iso\mm;\[a-] iso\mp;\[aa] iso\mm;an iso\mm;assa iso\mp;aan a -> i iso\mm;\[i-] iso\mp;ia iso\mp;ien\/-\mp;ain/ iso\mm;issa iso\mp;iin //
+\sana 36 isoin   isoi\[\mm;a-] isointa     isoi\mm;an isoi\mm;assa isoi\mp;aan a -> i isoi\mm;\[i-] isoi\mp;ia isoi\mp;ien\/-nten/  isoi\mm;issa isoi\mp;iin //
+
+\hline\hline
+
+\title NUT-NYT {\N~47} participle //
+\sana 47 ostanut ostan\[ee-] ostanutta ostaneen ostaneessa ostaneeseen e -> i ostane\[i-] ostaneita ostaneiden\/-tten/ ostaneissa ostanei\[siin]\/\[-hin]/ //
+\sana 47 syönyt syön\[ee-] syönyttä syöneen syöneessä syöneeseen e -> i syone\[i-] syoneitä syoneiden\/-tten/ syoneissä syonei\[siin]\/\[-hin]/ //
+\sana 47 päässyt pääss\[ee-] päässyttä päässeen päässeessä päässeeseen e -> i päässe\[i-] päässeitä päässeiden\/-tten/ päässeissä päässei\[siin]\/\[-hin]/ //
+
+\hline\hline
+
+\title UT-YT {\N~43} ~ //
+\sana 43 olut olu\[e-] olutta oluen oluessa olueen ue -> ui olu\[i-] oluita oluiden\/-tten/ oluissa olui\[siin]\/\[-hin]/ //
+\sana 43 lyhyt lyhy\[e-] lytyttä lyhyen lyhyessä lyhyeen ye -> yi lyhy\[i] lyhyitä lyhyiden\/-tten/ lyhyissä lyhyi\[siin]\/\[-hin]/ //
+
+\hline\hline
+
+\title  MONES? {\N~45} ordinal numbers //
+\sana 45 yhdes yhde\[\nn;e-] yhde\[ttä] yhde\nn;en yhde\nn;essä yhde\nt;een ne -> si yhden\[si-] yhdensiä yhdensien yhdensissä yhdensiin //
+\sana 45 neljäs neljä\[\nn;e-] neljä\[ttä] neljä\nn;en neljä\nn;essä neljä\nt;een ne -> si neljän\[si-] neljänsiä neljänsien neljänsissä neljänsiin //
+\sana 45 kymmenes kymmene\[\nn;e-] kymmene\[ttä] kymmene\nn;en kymmene\nn;essä kymmene\nt;een ne -> si kymmenen\[si-] kymmenensiä kymmenensien kymmenensissä kymmenensiin //
+\sana 45 sadas sada\[\nn;e-] sada\[tta] sada\nn;en sada\nn;essa sada\nt;een ne -> si sadan\[si-] sadansia sadansien sadansissa sadansiin //
+\sana 45 tuhannes tuhanne\[\nn;e-] tuhanne\[tta] tuhanne\nn;en tuhanne\nn;essa tuhanne\nt;een ne -> si tuhannen\[si-] tuhannensia tuhannensien tuhannensissa tuhannensiin //
+\sana 45 mones mone\[\nn;e-] mone\[tta] mone\nn;en mone\nn;essa mone\nt;een ne -> si monen\[si-] monensia monensien monensissa monensiin //
+
+\hline\hline
+
+\title  X-T-É-ETC {\NN~21, 22} some loan words //
+\sana 21 purée purée- puréeta puréen puréessa purée\[hen] ée -> éei purée\[i-] puréeita puréeiden\/-tten/ puréeissa puréei\[hin] //
+\sana 22 ragoût ragoût'- ragoût'ta ragoût'n ragoût'ssa ragoût'\[hun] ' -> 'i ragoût'\[i-] ragoût'ita ragoût'iden\/-tten/ ragoût'issa ragoût'i\[hin] //
+
+\hline\hline
+
+\title  XXX {\NN~35, 37, 42, 46} irregular //
+\sana 35 lä\mm;in lä\mp;i\[mä-] lä\mm;intä lä\mp;imän lä\mp;imässä lä\mp;imään ä -> i lä\mp;im\[i-] lä\mp;imiä lä\mp;imien\/-äin/ lä\mp;imissä lä\mp;iniin //
+\sana 37 vasen vase\[\mm;a-] vasenta\/-\mp;aa/ vase\mm;an vase\mm;assa vase\mp;aan a -> i vase\mm;\[i-] vase\mp;ia vase\mp;ien\/-\[\nt;]en/ vase\mm;issa vase\mp;iin //
+\sana 42 mies mie\[he-] miestä miehen miehessä mieheen e -> i mieh\[i-] miehiä mie\[st]en\/-hien/ miehissä miehiin //
+\sana 46 tuhat tuha\[\nn;e-] tuhatta tuha\nn;en tuha\nn;essa tuha\nt;een ne -> si tuhan\[si-] tuhansia tuhansien\/-\[\nt;]en/ tuhansissa tuhansiin //
+\sana --/-- ha\p;an ha\pp;a\[ma-] ha\p;anta ha\pp;aman\/-\[e]n/ ha\pp;amassa\/-\[e]ssa/ ha\pp;amaan\/-m\[ee]n/ a -> i ha\pp;am\[i-] ha\pp;amia ha\pp;amien\/-\[nt]en/ ha\pp;amissa ha\pp;amiin //
+
+\hline\hline\cases
+
+\end{tabular}
+\end{center}
+
+\vfill\eject
+
+\def\kotus #1 #2 #3 #4 #5 #6 -> #7 #8 // { \N~#1 & \mktitle{#2} & #3 & #5 & #4 & #6 & $\longrightarrow$ & #7 & #8 \\ }
+\def\mktitle#1{{\small\TT\color{magenta}#1}}
+\def\sumcases{{\small\sc kotus} & & {\small\sc nominatiivi} & {\small\sc partitiivi} & {\small\sc yksikkö} & & & & {\small\sc monikko} \\ \hline}
+
+\begin{center}
+\begin{tabular}{|r|l|l l l|rcl|l|}
+
+\hline\sumcases\hline
+
+\kotus 1 O-Ö-U-Y aa\lt;o     aa\ll;o-     a\lt;oa       o -> oi    aa\ll;o\[i]-       //
+\kotus 2 O-Ö-U-Y hillistö    hillistö-     hillistöa     ö -> öi    hillistö\[i-]   //
+\kotus 3 {AO-EO-IO-IÖ-IE-OE} museo museo- museota eo -> eoi museo\[i-] //
+\hline
+\kotus 4 O-Ö-U-Y era\kk;o    era\k;o-      era\kk;oa     o -> oi    era\k;o\[i-]    //
+\kotus 5 UUSI~I äi\T;i  äi\d;i-  äi\T;iä  i -> ei  äi\d;\[ei-]  //
+\kotus 6 UUSI~I  huijari huijari- huijaria  i -> ei huijar\[ei-] //
+\hline
+\kotus 7 VANHA~I lah\T;i lah\d;\[e-] lah\T;ea e -> i lah\d;\[i-] //
+\kotus 8 PELLE-NALLE nu\kk;e nu\k;e- nu\kk;ea e -> ei nu\k;e\[i-] //
+\kotus 9 A+A=OI hau\T;a hau\d;a- hau\T;aa a -> oi hau\d;o\[i-] //
+\hline
+\kotus 10 A-Ä  ho\nk;a ho\ng;a- ho\nk;aa  a -> i ho\ng;\[i-]  //
+\kotus 11 A-Ä   pihlaja pihlaja- pihlajaa  a -> i pihlaj\[i-]  //
+\kotus 11{\hbox to 0pt{$^*$\hskip 0pt minus 1 fill}} A+A=OI   pihlaja pihlaja- pihlajaa  a -> oi pihlaj\[oi-]  //
+\kotus 12 LA-NA-RA-IA-KKA-IJA  makkara makkara- makkaraa a -> oi makkar\[oi-] //
+\hline
+\kotus 13 A+A=OI kapusta kapusta- kapustaa  a -> oi kapust\[oi-] //
+\kotus 14 LA-NA-RA-IA-KKA-IJA  tora\kk;a tora\k;a- tora\kk;aa  a -> oi tora\k;\[oi-]  //
+\kotus 15 OA-EA-EÄ korkea korkea- korkeaa\/-ata/ ea -> ei korke\[i-] //
+\hline
+\kotus 16 MPI~\&~IN iso\mp;i iso\mm;\[a-] iso\mp;\[aa] a -> i iso\mm;\[i-]  //
+\kotus 17 AA-UU-EE paluu paluu- paluuta uu -> ui pal\[ui-] //
+\kotus 18 MAA-SUO-JÄÄ puu puu- puuta  uu -> ui p\[ui-]  //
+\hline
+\kotus 19 MAA-SUO-JÄÄ työ työ- työtä  yö -> öi t\[öi-]  //
+\kotus 20 AA-UU-EE raguu raguu- raguuta uu -> ui rag\[ui-] //
+\kotus 21 X-T-É-ETC purée purée- puréeta ée -> éei purée\[i-]  //
+\hline
+\kotus 22 X-T-É-ETC ragoût ragoût'- ragoût'ta ' -> 'i ragoût'\[i-] //
+\kotus 23 VANHA~MI-NI-RI-LI-LOHI tiili tiil\[e-] tiil\[t]ä   e -> i till\[i-] //
+\kotus 24 VANHA~MI-NI-RI-LI-LOHI uni un\[e-] un\[t]a e -> i un\[i-]  //
+\hline
+\kotus 25 VANHA~MI-NI-RI-LI-LOHI lumi  lum\[e-]  lu\[nt]a\/-mea/ e -> i lum\[i-]  //
+\kotus 26 VANHA~MI-NI-RI-LI-LOHI saari saar\[e-] saar\[t]a  e -> i saar\[i-]  //
+\kotus 27 VANHA~SI vesi ve\[\d;e-] ve\T;\[t]ä  e -> i ve\[si-]  //
+\hline
+\kotus 28 VANHA~SI ky\[\nn;e-] ky\nt;\[t]ä ky\nn;en e -> i kyn\[si-]  //
+\kotus 29 VANHA~PSI-KSI-TSI lapsi laps\[e-] la\[st]a  e -> i laps\[i-]  //
+\kotus 30 VANHA~PSI-KSI-TSI veitsi veits\[e-] vei\[st]ä e -> i veits\[i-] veitsiä  //
+\hline
+\kotus 31 VANHA~SI yksi y\[h\d;e-] yh\T;ä e -> i y\[ksi-]  //
+\kotus 32 EN-EL-ER-AR-ÄR  sisar sisar\[e-] sisarta e -> i sisar\[i-] //
+\kotus 33 IN su\lj;in su\lk;i\[me-] su\lj;inta e -> i su\lk;im\[i-]  //
+\hline
+\kotus 34 TON-TÖN kive\t;ön kive\tt;ö\[mä-] kive\t;öntä ä -> i kive\tt;ömiin //
+\kotus 35 XXX lä\mm;in lä\mp;i\[mä-] lä\mm;intä  ä -> i lä\mp;im\[i-]  //
+\kotus 36 MPI~\&~IN isoin   isoi\[\mm;a-] isointa    a -> i isoi\mm;\[i-]  //
+\hline
+\kotus 37 XXX vasen vase\[\mm;a-] vasenta\/-\mp;aa/ a -> i vase\mm;\[i-]  //
+\kotus 38 NEN hevonen hevo\[se-] hevo\[sta] e -> i hevos\[i-] //
+\kotus 39 US-YS-OS-ÖS-ANANAS hinaus hinau\[kse-] hinausta e -> i hinauks\[i-]  //
+\hline
+\kotus 40 YYS-UUS-YS-ABSTRAKTUS halpuus halpuu\[\d;e-] halpuu\[\T;]ta de -> ksi halpuu\[ksi-] //
+\kotus 41 IS-ES-AS-ÄS-ÄT-UT re\ng;as re\nk;\[aa-] re\ng;asta  aa -> ai re\nk;a\[i-]  //
+\kotus 42 XXX mies mie\[he-] miestä e -> i mieh\[i-]  //
+\hline
+\kotus 43 UT-YT olut olu\[e-] olutta ue -> ui olu\[i-]  //
+\kotus 44 IS-ES-AS-ÄS-ÄT-UT kevät kev\[ää-] kevättä ää -> äi kevä\[i-]  //
+\kotus 45 MONES? kahdeksas kahdeksa\[\nn;e-] kahdeksa\[tta] ne -> si  kahdeksan\[si-] //
+\hline
+\kotus 46 XXX tuhat tuha\[\nn;e-] tuhatta ne -> si tuhan\[si-] //
+\kotus 47 NUT-NYT syönyt syön\[ee-] syönyttä  e -> i syone\[i-]  //
+\kotus 48 E$^*$ jä\t;e jä\tt;e\[e-] jä\t;e\[ttä] e -> i jä\tt;e\[i-] //
+
+\hline\hline\sumcases
+
+\end{tabular}
+\end{center}
+
+\vfill\eject
+
+\begin{center}
+\begin{tabular}{|l|l|l l l|rcl|l|}
+
+\hline\sumcases\hline
+
+\kotus 5 UUSI~I äi\T;i  äi\d;i-  äi\T;iä  i -> ei  äi\d;\[ei-]  //
+\kotus 6 ~~~~~~  huijari huijari- huijaria  i -> ei huijar\[ei-] //
+\hline
+\kotus 7 VANHA~I lah\T;i lah\d;\[e-] lah\T;ea e -> i lah\d;\[i-] //
+\hline
+\kotus 23 VANHA~MI-NI-RI-LI-LOHI tiili tiil\[e-] tiil\[t]ä   e -> i till\[i-] //
+\kotus 24 ~~~~~~~~~~~~~~~~~~~~~~ uni un\[e-] un\[t]a e -> i un\[i-]  //
+\kotus 25 ~~~~~~~~~~~~~~~~~~~~~~ lumi  lum\[e-]  lu\[nt]a\/-mea/ e -> i lum\[i-]  //
+\kotus 26 ~~~~~~~~~~~~~~~~~~~~~~ saari saar\[e-] saar\[t]a  e -> i saar\[i-]  //
+\hline
+\kotus 27 VANHA~SI vesi ve\[\d;e-] ve\T;\[t]ä  e -> i ve\[si-]  //
+\kotus 31 ~~~~~~~~ yksi y\[h\d;e-] yh\T;ä e -> i y\[ksi-]  //
+\kotus 28 ~~~~~~~~ ky\[\nn;e-] ky\nt;\[t]ä ky\nn;en e -> i kyn\[si-]  //
+\hline
+\kotus 29 VANHA~PSI-KSI-TSI lapsi laps\[e-] la\[st]a  e -> i laps\[i-]  //
+\kotus 30 ~~~~~~~~~~~~~~~~~ veitsi veits\[e-] vei\[st]ä e -> i veits\[i-] veitsiä  //
+\hline
+\hline
+\hline
+\sumcases
+\hline
+\hline
+\kotus 1 O-Ö-U-Y aa\lt;o     aa\ll;o-     a\lt;oa       o -> oi    aa\ll;o\[i]-       //
+\kotus 2 ~~~~~~~ hillistö    hillistö-     hillistöa     ö -> öi    hillistö\[i-]   //
+\kotus 4 ~~~~~~~ era\kk;o    era\k;o-      era\kk;oa     o -> oi    era\k;o\[i-]    //
+\hline
+\kotus 10 A-Ä  ho\nk;a ho\ng;a- ho\nk;aa  a -> i ho\ng;\[i-]  //
+\kotus 11 ~~~   pihlaja pihlaja- pihlajaa  a -> i pihlaj\[i-]  //
+\hline
+\kotus 9 A+A=OI hau\T;a hau\d;a- hau\T;aa a -> oi hau\d;o\[i-] //
+\kotus 13 ~~~~~~ kapusta kapusta- kapustaa  a -> oi kapust\[oi-] //
+\kotus 11{\hbox to 0pt{$^*$\hskip 0pt minus 1 fill}} ~~~~~~   pihlaja pihlaja- pihlajaa  a -> oi pihlaj\[oi-]  //
+\hline
+\kotus 12 LA-NA-RA-IA-KKA-IJA  makkara makkara- makkaraa a -> oi makkar\[oi-] //
+\kotus 14 ~~~~~~~~~~~~~~~~~~~  tora\kk;a tora\k;a- tora\kk;aa  a -> oi tora\k;\[oi-]  //
+\hline
+\hline
+\hline
+\sumcases
+\hline
+\hline
+\kotus 48 E$^*$ jä\t;e jä\tt;e\[e-] jä\t;e\[ttä] e -> i jä\tt;e\[i-] //
+\hline
+\kotus 8 PELLE-NALLE nu\kk;e nu\k;e- nu\kk;ea e -> ei nu\k;e\[i-] //
+\hline
+\kotus 18 MAA-SUO-JÄÄ puu puu- puuta  uu -> ui p\[ui-]  //
+\kotus 19 ~~~~~~~~~~~ työ työ- työtä  yö -> öi t\[öi-]  //
+\hline
+\kotus 17 AA-UU-EE paluu paluu- paluuta uu -> ui pal\[ui-] //
+\kotus 20 ~~~~~~~~ raguu raguu- raguuta uu -> ui rag\[ui-] //
+\hline
+\kotus 3 {AO-EO-IO-IÖ-IE-OE} museo museo- museota eo -> eoi museo\[i-] //
+\hline
+\kotus 15 OA-EA-EÄ korkea korkea- korkeaa\/-ata/ ea -> ei korke\[i-] //
+\hline
+\hline
+\hline
+\sumcases
+\hline
+\hline
+\kotus 38 NEN hevonen hevo\[se-] hevo\[sta] e -> i hevos\[i-] //
+\hline
+\kotus 33 IN su\lj;in su\lk;i\[me-] su\lj;inta e -> i su\lk;im\[i-]  //
+\hline
+\kotus 34 TON-TÖN kive\t;ön kive\tt;ö\[mä-] kive\t;öntä ä -> i kive\tt;ömiin //
+\hline
+\kotus 32 EN-EL-ER-AR-ÄR  sisar sisar\[e-] sisarta e -> i sisar\[i-] //
+\hline
+\kotus 39 US-YS-OS-ÖS-ANANAS hinaus hinau\[kse-] hinausta e -> i hinauks\[i-]  //
+\hline
+\kotus 40 YYS-UUS-YS-ABSTRAKTUS halpuus halpuu\[\d;e-] halpuu\[\T;]ta de -> ksi halpuu\[ksi-] //
+\hline
+\kotus 41 IS-ES-AS-ÄS-ÄT-UT re\ng;as re\nk;\[aa-] re\ng;asta  aa -> ai re\nk;a\[i-]  //
+\kotus 44 ~~~~~~~~~~~~~~~~~ kevät kev\[ää-] kevättä ää -> äi kevä\[i-]  //
+\hline
+\hline
+\hline
+\sumcases
+\hline
+\hline
+\kotus 16 MPI~\&~IN iso\mp;i iso\mm;\[a-] iso\mp;\[aa] a -> i iso\mm;\[i-]  //
+\kotus 36 ~~~~~~~~~ isoin   isoi\[\mm;a-] isointa    a -> i isoi\mm;\[i-]  //
+\hline
+\kotus 47 NUT-NYT syönyt syön\[ee-] syönyttä  e -> i syone\[i-]  //
+\hline
+\kotus 43 UT-YT olut olu\[e-] olutta ue -> ui olu\[i-]  //
+\hline
+\kotus 45 MONES? kahdeksas kahdeksa\[\nn;e-] kahdeksa\[tta] ne -> si  kahdeksan\[si-] //
+\hline
+\kotus 21 X-T-É-ETC purée purée- puréeta ée -> éei purée\[i-]  //
+\kotus 22 ~~~~~~~~~ ragoût ragoût'- ragoût'ta ' -> 'i ragoût'\[i-] //
+\hline
+\kotus 35 XXX lä\mm;in lä\mp;i\[mä-] lä\mm;intä  ä -> i lä\mp;im\[i-]  //
+\kotus 37 ~~~ vasen vase\[\mm;a-] vasenta\/-\mp;aa/ a -> i vase\mm;\[i-]  //
+\kotus 42 ~~~ mies mie\[he-] miestä e -> i mieh\[i-]  //
+\kotus 46 ~~~ tuhat tuha\[\nn;e-] tuhatta ne -> si tuhan\[si-] //
+\hline
+\hline
+\sumcases
+\end{tabular}
+\end{center}
+\end{document}
